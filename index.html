@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./public/styles/styles.css">
+</head>
+<body>
+    <!-- <h1>Pokedex LaunchX 1</h1> -->
+    <div class="main-container">
+        <div class="top-container">
+            <div class="top-item-left">
+                <div class="item-1">
+                    <div class="item-1-1">
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="item-2-1"></div>
+                    <div class="item-2-2"></div>
+                    <div class="item-2-3"></div>
+                </div>
+            </div>
+            <div class="top-item-center">
+                <h1>Pokedex</h1>
+            </div>
+            <div class="top-item-right">
+            </div>
+        </div>
+        <div class="mid-container" id="midContainer" style="display: none;">
+            <div class="mid-container-left">
+                <div class="pokeball">
+                    <img src="./public/img/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+                </div>
+                <div class="pokeElements">
+                    <h3>Nombre: </h3><p id="pokeNames"></p>
+                    <h3>Tipo:</h3><p id="pokeTypes"></p>
+                </div>
+            </div>
+            <div class="mid-container-mid">
+                <h3>Estadísticas:</h3>
+                <div class="mid-container-mid-1">
+                    <div class="box1">
+                        <p id="pokeStats"></p>
+                        <h4 id="pokeStatName0"></h4>
+                        <p id="pokeStatBase0"></p>
+                        <p id="pokeStatEffort0"></p>
+                    </div>
+                    <div class="box2">
+                        <h4 id="pokeStatName1"></h4>
+                        <p id="pokeStatBase1"></p>
+                        <p id="pokeStatEffort1"></p>
+                    </div>
+                </div>
+                <div class="mid-container-mid-2">
+                    <div class="box3">
+                        <h4 id="pokeStatName2"></h4>
+                        <p id="pokeStatBase2"></p>
+                        <p id="pokeStatEffort2"></p>
+                    </div>
+                    <div class="box4">
+                        <h4 id="pokeStatName3"></h4>
+                        <p id="pokeStatBase3"></p>
+                        <p id="pokeStatEffort3"></p>
+                    </div>
+                </div>
+                <div class="mid-container-mid-3">
+                    <div class="box5">
+                        <h4 id="pokeStatName4"></h4>
+                        <p id="pokeStatBase4"></p>
+                        <p id="pokeStatEffort4"></p>
+                    </div>
+                    <div class="box6">
+                        <h4 id="pokeStatName5"></h4>
+                        <p id="pokeStatBase5"></p>
+                        <p id="pokeStatEffort5"></p> 
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mid-container-right">
+                <h3>Movimientos:</h3>
+                <div class="mid-container-mid-1">
+                    <div class="box1">
+                        <h4 id="pokeMoveName0"></h4>
+                    </div>
+                    <div class="box2">
+                        <h4 id="pokeMoveName1"></h4>
+                    </div>
+                </div>
+                <div class="mid-container-mid-2">
+                    <div class="box3">
+                        <h4 id="pokeMoveName2"></h4>
+                    </div>
+                    <div class="box4">
+                        <h4 id="pokeMoveName3"></h4>
+                    </div>
+                </div>
+                <div class="mid-container-mid-3">
+                    <div class="box5">
+                        <h4 id="pokeMoveName4"></h4>
+                    </div>
+                    <div class="box6">
+                        <h4 id="pokeMoveName5"></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            <div class="bottom-container" id="botContainer">
+                <div class="input-box">
+                    <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">
+                </div>
+                <div class="finder-button">
+                    <button onclick="fetchPokemon()">Cambiar pokemon</button>
+                </div>
+            </div>
+    </div>
+
+</body>
+<footer>
+    <script src="./public/js/pokedex.js"></script>
+</footer>
+</html>
